@@ -1,6 +1,5 @@
 <html>
 
-
 	<!--  Vision Webpage by Brandon Ward -->
 
 	<head>
@@ -8,6 +7,14 @@
 	</head>
 
 	<style>
+
+	.mainTitle {
+		font-family: sans-serif;
+    	font-size: 70px;
+    	font-style: italic;	
+    	color:#ff7517;
+    	text-align: center;
+	}
 
 	.dbheader {
     	font-family: sans-serif;
@@ -18,7 +25,15 @@
     	outline: 2px 2px #ff0000
     	text-shadow: 1px 1px black;
     	cursor: pointer;
-    	margin-bottom: 100px;
+    	margin-bottom: 10px;
+	}
+
+	.nameInfo {
+		font-family: sans-serif;
+    	font-size: 20px;
+    	color:#f6f4f4;
+    	text-align: center;
+    	margin-bottom: 40px;
 	}
 
 /* Fade in*/
@@ -48,6 +63,12 @@
 animation-delay: 1s;
 }
 
+.fade-in.nameInfo {
+-webkit-animation-delay: 1.5s;
+-moz-animation-delay: 1.5s;
+animation-delay: 1.5s;
+}
+
 .fade-in.mainLinkTable {
 -webkit-animation-delay: 0.2s;
 -moz-animation-delay: 0.2s;
@@ -66,58 +87,43 @@ animation-delay: 0.3s;
 animation-delay: 0.7s;
 }
 
-.fade-in.leagueButton {
+.fade-in.resources {
 -webkit-animation-delay: 1.2s;
 -moz-animation-delay:1.2s;
 animation-delay: 1.2s;
 }
 
-.fade-in.scheduleButton {
+.fade-in.imagesButton {
 -webkit-animation-delay: 1.6s;
 -moz-animation-delay: 1.6s;
 animation-delay: 1.6s;
 }
 
-.fade-in.espnButton {
+.fade-in.meetingButton {
 -webkit-animation-delay: 2s;
 -moz-animation-delay: 2s;
 animation-delay: 2s;
 }
 
-/*Fade in for team page */
-.fade-in.teamTable {
--webkit-animation-delay: .05s;
--moz-animation-delay: .05s;
-animation-delay: .05s;
+.fade-in.membersButton {
+-webkit-animation-delay: 2.4s;
+-moz-animation-delay: 2.4s;
+animation-delay: 2.4s;
 }
 
 
-	.fade-in.ffTitle {
+
+
+   .bodyText {
+ 		font-family: sans-serif;
+ 		font-style: 20px;
+ 		padding-right: 25px;
+		padding-left: 25px;
+	}
+
+	.bodyText h2 {
+		color: #ff7517;
 		text-align: center;
-		letter-spacing: 45px;
-		color:white;
-	}
- 
-
-	.mainPageDisplay {
-    	font-family: sans-serif;
-    	font-size: 65px;
-    	white-space: nowrap;
-    	color:#09497f;
-    	font-weight:lighter;
-    	/*text-shadow: 2px 2px black;*/
-    	text-align: center;
-	}
-
-		.bodyText {
-    	font-family: sans-serif;
-    	font-size: 65px;
-    	white-space: nowrap;
-    	color:#09497f;
-    	font-weight:lighter;
-    	/*text-shadow: 2px 2px black;*/
-    	margin-top:100px;
-    	text-align: center;
 	}
 
 	.pageBody {
@@ -161,15 +167,49 @@ animation-delay: .05s;
 		-webkit-box-shadow: 0 0 20px white;
         		box-shadow: 0 0 20px white;	
 	}
+
+
+	.imageLinkButtons {
+		 margin-top: 15px;
+		 margin-bottom: 25px;
+		 margin-left: auto;
+		 margin-right:auto;
+		 border-color: #09497f;
+		 white-space: nowrap;
+	}
+
+	.imageLinkButtons a {
+		background :#ff7517;
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+		font-weight:lighter;
+		text-decoration: none;
+		width:250px;
+		padding:15px 15px 15px 15px;
+		box-shadow: 1px 2px 2px black;
+
+	}
+
+	.imageLinkButtons a:hover  {
+		cursor:pointer;
+		text-shadow: 0px 1px black;
+		font-weight: bold;
+		color: white;
+		-webkit-box-shadow: 0 0 20px white;
+        		box-shadow: 0 0 20px white;	
+	}
  
 	</style>
 
 	<body style="background-color:#3e3939">
-	<h1>VISION</h1>
+	<h1 class="mainTitle">VISION</h1>
 	<header class="fade-in dbheader" style="text-align:center;">
-	<!--<img src="DirtyBirdLogo.png" alt="DB Logo" style="width:190px;height:111px;">-->
 	A 3D PERSISTENCE OF VISION LED DISPLAY
 	</header>
+	<div class="fade-in nameInfo">
+		Designed by Aaron Benson, Derek Burns, Taylor Smith, and Brandon Ward
+	</div>
 
 	<div>
 		<nav class="fade-in mainLinkButtons" align="center">
@@ -179,32 +219,34 @@ animation-delay: .05s;
 				<a class="fade-in mileStones">
 				MILESTONES
 				</a>
-				<a class="fade-in teamButton">
-				MILESTONES
+				<a class="fade-in resources">
+				RESOURCES
 				</a>
-				<a class="fade-in leagueButton">
-				RENDERS
-				</a>
-				<a class="fade-in scheduleButton">
-				MEETING LOG
-				</a>
-				<a class="fade-in scheduleButton">
+				<a class="fade-in imagesButton">
 				IMAGES
 				</a>
-				<a class="fade-in scheduleButton">
+				<a class="fade-in meetingButton">
+				MEETING LOG
+				</a>
+				<a class="fade-in membersButton">
 				MEMBERS
 				</a>
 		</nav>
 	</div>
 
 	<div class="pageBody">
-
-		<div>
+		<div class="mainPageDisplay">
+		<div class="bodyText">
+			<div>
+				<h2>WHAT IS PERSISTENCE OF VISION? </h2>
+				<p>Persistence of vision refers to the optical illusion that occurs when visual perception of an object does not cease for some time after the rays of light proceeding from it have ceased to enter the eye. The illusion has also been described as "retinal
+				persistence", "persistence of impressions", simply"persistence" and other variations </p>
+			</div>
 			<div style="text-align: center">
 			  <iframe width="560" height="315" src="https://www.youtube.com/embed/c_ABvNYlhMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			<div>
-
+				<h2>OUR DESIGN</h2>
 				<p>We designed an LED display that applies the idea of persistence of vision to give the user the effect of seeing 3D images. Persistence of vision is applied to our display by having LEDs rotate around a single central axis, creating the illusion of a full volumetric display.</p>
 				<p> While designing our 3D LED display, the goal was to create a higher resolution (pixel density) than previous projects that have used this approach. Another important challenge that we addressed is having a high number of colors that can be displayed. Other designs that we have seen only turn the LEDs fully on or fully off. That means unicolor designs only have one bit of color, while designs that use RGB only get 3 bits of color (8 colors). We speculate that these limits were imposed simply because driving a 3D rotating display is much harder than a single layer display.</p>
 				<p> For our project, PWM was used for each LED in order to get a wider range of colors. Our project is capable of displaying 7 vertical pixels, 32 radial pixels, and 360 sections around the circumference (akin to a pie chart with 360 equal sections, where the radius is 7 units and a depth of 32). The general design of our project involves having most of our control logic (main board) located on the rotating display itself. This is namely because finding an inexpensive slip ring that fits our needs was rather difficult. This means that we had to be able to wirelessly transmit the data to the controller through wifi using an ESP8266 chip by way of an iOS mobile application. Up through the central axis is a rod that allows us to attach 7 individual PCBs (each containing 32 LEDs). Each PCB has two LED drivers on it, which takes in serial data and translates that into the appropriate brightness for each LED. The assembly also included a sensor in order to synchronize the rotation of the display with the controller
@@ -213,30 +255,133 @@ animation-delay: .05s;
 				</p>
 			</div>
 		</div>
-
-		<!--Team Page -->
+	</div>
 
 		<div class="milestonesPageDisplay">
-			MileStones
+			<div class="bodyText">
+				<h2>Milestones</h2>
+				<ul>
+					<li>Finish Ordering Parts. Assigned Members: Derek Burns, Aaron Benson (8/27 - 9/2)</li>
+				</ul>
+			</div>
+			Milestones
+				Finish Ordering Parts. Assigned Members: Derek Burns, Aaron Benson (8/27 - 9/2)
+Begin writing compiler to convert vector file generated by CAD software to binary file used to draw images. Assigned Members: Brandon Ward, Taylor Smith (8/27 - 9/2)
+Assemble and test pcb for functionality. Assigned Members: All Members (8/27 - 9/2)
+Finish Initial Construction of chassis. Assigned Members: Derek Burns, Aaron Benson (8/27 - 9/9)
+Finish writing compiler to convert vector file given by CAD software. Assigned Members: Taylor Smith, Brandon Ward (8/27 - 9/9)
+Finish Construction of display with a few PCBs and all hardware components. Assigned Members: All Members (9/9 - 9/16)
+Begin writing software for display testing which includes setting up the correct rotation for resolution as well as setting up WiFi communication. Assigned Members: All Members (9/16 - 9/23)
+Begin initial testing of sending images over wireless network. Assigned Members: All Members (9/16 - 9/23)
+Continue implementation of Mobile Application. Assigned Members: Brandon Ward, Taylor Smith (9/23 - 9/30)
+Continue writing software (verilog, mobile application, and server) for display. Assigned Members: Derek Burns, Aaron Benson (9/23 - 9/30)
+Finish writing software and debug. Assigned Members: All Members (9/30 - 10/7)
+Transition into animations on display. Assigned Members: All Members (10/7 - 10/14)
+Fine tune display this include fixing bugs or adding extra features. Assigned Members: All Members
 		</div>
 
-		<!--End Team Page -->
+		<div class="resourcesPageDisplay">
+			<div class="bodyText">
+			<div style="text-align: center;">
+				<h2>RESOURCES</h2>
+				<p>The following are links to our google drive and repositories.</p>
+			</div>
+				<div>
+					<h2>Repositories:</h2>
+					  <ul>
+					  	<li><a href="https://github.com/Tsmith319/Senior-Project-Vivado">Repository for statemachine and processor</a></li>
+					  </ul>
+					   <ul>
+					  	<li><a href="https://github.com/bward34/Vision">Repository for iOS application</a></li>
+					  </ul>
+					  <h2>Google Drive:</h2>
+					  <ul>
+					  	<li><a href="https://drive.google.com/drive/folders/1opPyBsIggKdWkcSAGUZWy1F-bnmxONfs">Link to our Google Drive</a></li>
+					  </ul>
+				</div>
+		   </div>
+	 </div>
 
-		<div class="schedulePageDisplay">
+		<div class="meetingPageDisplay">
 
 				<div class="bodyText">
-				<p>
-					Schedule Page Coming Soon...
-				</p>
+				<h2>Meeting Log</h2>
+					<ul>
+					  	<li><a href="https://docs.google.com/spreadsheets/d/10BULNX3W8Pe1tVQ8uWuWExLomMm6pmAVpwlJKckAVkE/edit#gid=1386834576">Link to our meeting log</a></li>
+					  </ul>
+					  <div style="text-align: center;">
+					  <iframe width="760" height="515" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo4qM9RIrgYzkiQa5B_qK8EUDd4k5Uur4nQaEM2Pu2wkr0N-vsIOgNROAUbJogAZ_UDvtRCssEk2rc/pubhtml?widget=true&amp;headers=false"></iframe>
+					  </div>
 				</div>	
 		</div>
 
-		<div class="leaguePageDisplay">
+		<div class="imagesDisplay">
+			<div class="bodyText">
+				<h2>IMAGES AND VIDEOS</h2>
+				<div>
+				<nav class="imageLinkButtons" align="center">
+						<a class="constructionButton">
+						Construction
+						</a>
+						<a class="appButton">
+						App Images
+						</a>
+						<a class="renderButton">
+						Renders
+						</a>
+						<a class="displayButton">
+						Display
+						</a>				
+				</nav>
+				</div>
 
+				<div class="constructionDisplay">
+					<div style="text-align: center;">
+					<h3>Construction</h3>
+					<img src="construction/20180721_192727.jpg" alt="Base" height="500" width="1000">
+					<img src="construction/20180721_192812.jpg" alt="Base" height="500" width="1000">
+					<img src="construction/20180722_125112.jpg" alt="Base" height="500" width="1000">
+					<img src="construction/20180904_121251.jpg" alt="Base" height="500" width="1000">
+					<img src="construction/20180919_162649.jpg" alt="Base" height="500" width="1000">
+					<img src="construction/20180922_181035.jpg" alt="Base" height="500" width="1000">
+					<img src="construction/IMG_2143.jpg" alt="Base">
+					</div>
+				</div>
+				<div class="appDisplay">
+					<h3>App Images</h3>
+				</div>
+				<div class="renderDisplay">
+					<h3>Renders</h3>
+				</div>
+				<div class="videoDisplay">
+					<h3>Videos and Display Images</h3>
+				</div>
+			</div>	
+		</div>
+
+		<div class="membersPageDisplay">
 				<div class="bodyText">
-				<p>
-					League Page Coming Soon...
-				</p>
+					<h2>Members</h2>
+					<div style="text-align: center;">
+						<h3>Aaron Benson</h3>
+						Primary Responsibilities: Part Research and Ordering, Base Design and Construction<br>
+						Email: <a href = "mailto:aben7025@gmail.com">aben7025@gmail.com</a>
+					</div>
+					<div style="text-align: center;">
+						<h3>Derek Burns</h3>
+						Primary Responsibilities: State Machine and Processor Design<br>
+						Email: <a href = "mailto:imchillin2day@gmail.com">imchillin2day@gmail.com</a>
+					</div>
+					<div style="text-align: center;">
+						<h3>Taylor Smith</h3>
+						Primary Responsibilities: Render Software, State Machine<br>
+						Email: <a href = "mailto:taysmith16@gmail.com">taysmith16@gmail.com</a>
+					</div>
+					<div style="text-align: center;">
+						<h3>Brandon Ward</h3>
+						Primary Responsibilities: iOS Application Devlopment, Base Construction<br>
+						Email: <a href = "mailto:brandon.ward@utah.edu">brandon.ward@utah.edu</a>
+					</div>
 				</div>	
 		</div>
 
@@ -253,46 +398,107 @@ animation-delay: .05s;
 
 	$(function(){
 		$('.mainPageDisplay').show();
-		$('.leaguePageDisplay').hide();
+		$('.membersPageDisplay').hide();
 		$('.milestonesPageDisplay').hide();
-		$('.schedulePageDisplay').hide();
+		$('.meetingPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.imagesDisplay').hide();
 	});	
 
 	$('.homeButton').click(function(){
 		$('.mainPageDisplay').show();
-		$('.leaguePageDisplay').hide();
+		$('.membersPageDisplay').hide();
 		$('.milestonesPageDisplay').hide();
-		$('.schedulePageDisplay').hide();
+		$('.meetingPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.imagesDisplay').hide();
 	});	
 
 	$('.dbheader').click(function(){
 		$('.mainPageDisplay').show();
-		$('.leaguePageDisplay').hide();
+		$('.membersPageDisplay').hide();
 		$('.milestonesPageDisplay').hide();
-		$('.schedulePageDisplay').hide();
+		$('.meetingPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.imagesDisplay').hide();
 	});	
 
-	$('.leagueButton').click(function(){
-		$('.leaguePageDisplay').show();
+	$('.membersButton').click(function(){
+		$('.membersPageDisplay').show();
 		$('.mainPageDisplay').hide();
 		$('.milestonesPageDisplay').hide();
-		$('.schedulePageDisplay').hide();
+		$('.meetingPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.imagesDisplay').hide();
 	});
 
-	$('.scheduleButton').click(function(){
-		$('.schedulePageDisplay').show();
+	$('.meetingButton').click(function(){
+		$('.meetingPageDisplay').show();
 		$('.mainPageDisplay').hide();
-		$('.leaguePageDisplay').hide();
+		$('.membersPageDisplay').hide();
 		$('.milestonesPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.imagesDisplay').hide();
 	});
-
 
 	$('.mileStones').click(function(){
 		$('.milestonesPageDisplay').show();
 		$('.mainPageDisplay').hide();
-		$('.leaguePageDisplay').hide();
-		$('.schedulePageDisplay').hide();
+		$('.membersPageDisplay').hide();
+		$('.meetingPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.imagesDisplay').hide();
 	});	
+
+	$('.resources').click(function(){
+		$('.milestonesPageDisplay').hide();
+		$('.mainPageDisplay').hide();
+		$('.resourcesPageDisplay').show();
+		$('.meetingPageDisplay').hide();
+		$('.membersPageDisplay').hide();
+		$('.imagesDisplay').hide();
+	});	
+
+	$('.imagesButton').click(function(){
+		$('.imagesDisplay').show();
+		$('.milestonesPageDisplay').hide();
+		$('.mainPageDisplay').hide();
+		$('.resourcesPageDisplay').hide();
+		$('.meetingPageDisplay').hide();
+		$('.membersPageDisplay').hide();
+		$('.constructionDisplay').show();
+		$('.appDisplay').hide();
+		$('.renderDisplay').hide();
+		$('.videoDisplay').hide();
+	});	
+
+	$('.constructionButton').click(function(){
+		$('.constructionDisplay').show();
+		$('.appDisplay').hide();
+		$('.renderDisplay').hide();
+		$('.videoDisplay').hide();
+	});
+
+	$('.appButton').click(function(){
+		$('.constructionDisplay').hide();
+		$('.appDisplay').show();
+		$('.renderDisplay').hide();
+		$('.videoDisplay').hide();
+	});
+
+	$('.renderButton').click(function(){
+		$('.constructionDisplay').hide();
+		$('.appDisplay').hide();
+		$('.renderDisplay').show();
+		$('.videoDisplay').hide();
+	});
+
+	$('.displayButton').click(function(){
+		$('.constructionDisplay').hide();
+		$('.appDisplay').hide();
+		$('.renderDisplay').hide();
+		$('.videoDisplay').show();
+	});
 
 
 	</script>
