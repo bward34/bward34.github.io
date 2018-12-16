@@ -1,1 +1,299 @@
-hello world
+<html>
+
+
+	<!--  Vision Webpage by Brandon Ward -->
+
+	<head>
+	<title>Vision - Persistence of Vision Led Display</title>
+	</head>
+
+	<style>
+
+	.dbheader {
+    	font-family: sans-serif;
+    	font-size: 20px;
+    	letter-spacing: 5px;
+    	white-space: nowrap;
+    	color:#ff7517;
+    	outline: 2px 2px #ff0000
+    	text-shadow: 1px 1px black;
+    	cursor: pointer;
+    	margin-bottom: 100px;
+	}
+
+/* Fade in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.dbheader {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+
+.fade-in.mainLinkTable {
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay: 0.2s;
+animation-delay: 0.2s;
+}
+
+.fade-in.homeButton {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+
+.fade-in.mileStones {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+.fade-in.leagueButton {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.scheduleButton {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+.fade-in.espnButton {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+/*Fade in for team page */
+.fade-in.teamTable {
+-webkit-animation-delay: .05s;
+-moz-animation-delay: .05s;
+animation-delay: .05s;
+}
+
+
+	.fade-in.ffTitle {
+		text-align: center;
+		letter-spacing: 45px;
+		color:white;
+	}
+ 
+
+	.mainPageDisplay {
+    	font-family: sans-serif;
+    	font-size: 65px;
+    	white-space: nowrap;
+    	color:#09497f;
+    	font-weight:lighter;
+    	/*text-shadow: 2px 2px black;*/
+    	text-align: center;
+	}
+
+		.bodyText {
+    	font-family: sans-serif;
+    	font-size: 65px;
+    	white-space: nowrap;
+    	color:#09497f;
+    	font-weight:lighter;
+    	/*text-shadow: 2px 2px black;*/
+    	margin-top:100px;
+    	text-align: center;
+	}
+
+	.pageBody {
+		background: white;
+		box-shadow: 3px 1px black;
+		margin: 30px;
+		border-size:2px;
+		border-style:solid;
+		border-color:#f6f4f4;
+	}
+
+	/*Main button styles*/
+
+	.mainLinkButtons {
+		 margin-top: 15px;
+		 margin-bottom: 25px;
+		 margin-left: auto;
+		 margin-right:auto;
+		 border-color: #09497f;
+		 white-space: nowrap;
+	}
+
+	.mainLinkButtons a {
+		background :#2c2727;
+		color: white;
+		font-family: sans-serif;
+		text-align: center;
+		font-weight:lighter;
+		text-decoration: none;
+		width:250px;
+		padding:25px 25px 25px 25px;
+		box-shadow: 1px 2px 2px black;
+
+	}
+
+	.mainLinkButtons a:hover  {
+		cursor:pointer;
+		text-shadow: 0px 1px black;
+		font-weight: bold;
+		color: #ff7517;
+		-webkit-box-shadow: 0 0 20px white;
+        		box-shadow: 0 0 20px white;	
+	}
+ 
+	</style>
+
+	<body style="background-color:#3e3939">
+	<h1>VISION</h1>
+	<header class="fade-in dbheader" style="text-align:center;">
+	<!--<img src="DirtyBirdLogo.png" alt="DB Logo" style="width:190px;height:111px;">-->
+	A 3D PERSISTENCE OF VISION LED DISPLAY
+	</header>
+
+	<div>
+		<nav class="fade-in mainLinkButtons" align="center">
+				<a class="fade-in homeButton">
+				HOME
+				</a>
+				<a class="fade-in mileStones">
+				MILESTONES
+				</a>
+				<a class="fade-in teamButton">
+				MILESTONES
+				</a>
+				<a class="fade-in leagueButton">
+				RENDERS
+				</a>
+				<a class="fade-in scheduleButton">
+				MEETING LOG
+				</a>
+				<a class="fade-in scheduleButton">
+				IMAGES
+				</a>
+				<a class="fade-in scheduleButton">
+				MEMBERS
+				</a>
+		</nav>
+	</div>
+
+	<div class="pageBody">
+
+		<div>
+			<div style="text-align: center">
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/c_ABvNYlhMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div>
+
+				<p>We designed an LED display that applies the idea of persistence of vision to give the user the effect of seeing 3D images. Persistence of vision is applied to our display by having LEDs rotate around a single central axis, creating the illusion of a full volumetric display.</p>
+				<p> While designing our 3D LED display, the goal was to create a higher resolution (pixel density) than previous projects that have used this approach. Another important challenge that we addressed is having a high number of colors that can be displayed. Other designs that we have seen only turn the LEDs fully on or fully off. That means unicolor designs only have one bit of color, while designs that use RGB only get 3 bits of color (8 colors). We speculate that these limits were imposed simply because driving a 3D rotating display is much harder than a single layer display.</p>
+				<p> For our project, PWM was used for each LED in order to get a wider range of colors. Our project is capable of displaying 7 vertical pixels, 32 radial pixels, and 360 sections around the circumference (akin to a pie chart with 360 equal sections, where the radius is 7 units and a depth of 32). The general design of our project involves having most of our control logic (main board) located on the rotating display itself. This is namely because finding an inexpensive slip ring that fits our needs was rather difficult. This means that we had to be able to wirelessly transmit the data to the controller through wifi using an ESP8266 chip by way of an iOS mobile application. Up through the central axis is a rod that allows us to attach 7 individual PCBs (each containing 32 LEDs). Each PCB has two LED drivers on it, which takes in serial data and translates that into the appropriate brightness for each LED. The assembly also included a sensor in order to synchronize the rotation of the display with the controller
+				</p>
+				<p> The control board takes in the appropriate scene data and converts it into the required pixel data. This required implementing a graphics rendering algorithm in order to work with polar coordinates. When the assembly is at the appropriate rotation, the control board will send out the corresponding serial pixel data to each arm of the display. Once a full rotation is made, the next frame is processed/displayed.
+				</p>
+			</div>
+		</div>
+
+		<!--Team Page -->
+
+		<div class="milestonesPageDisplay">
+			MileStones
+		</div>
+
+		<!--End Team Page -->
+
+		<div class="schedulePageDisplay">
+
+				<div class="bodyText">
+				<p>
+					Schedule Page Coming Soon...
+				</p>
+				</div>	
+		</div>
+
+		<div class="leaguePageDisplay">
+
+				<div class="bodyText">
+				<p>
+					League Page Coming Soon...
+				</p>
+				</div>	
+		</div>
+
+	</div>
+
+	<footer>
+	
+	</footer>
+
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+
+	$(function(){
+		$('.mainPageDisplay').show();
+		$('.leaguePageDisplay').hide();
+		$('.milestonesPageDisplay').hide();
+		$('.schedulePageDisplay').hide();
+	});	
+
+	$('.homeButton').click(function(){
+		$('.mainPageDisplay').show();
+		$('.leaguePageDisplay').hide();
+		$('.milestonesPageDisplay').hide();
+		$('.schedulePageDisplay').hide();
+	});	
+
+	$('.dbheader').click(function(){
+		$('.mainPageDisplay').show();
+		$('.leaguePageDisplay').hide();
+		$('.milestonesPageDisplay').hide();
+		$('.schedulePageDisplay').hide();
+	});	
+
+	$('.leagueButton').click(function(){
+		$('.leaguePageDisplay').show();
+		$('.mainPageDisplay').hide();
+		$('.milestonesPageDisplay').hide();
+		$('.schedulePageDisplay').hide();
+	});
+
+	$('.scheduleButton').click(function(){
+		$('.schedulePageDisplay').show();
+		$('.mainPageDisplay').hide();
+		$('.leaguePageDisplay').hide();
+		$('.milestonesPageDisplay').hide();
+	});
+
+
+	$('.mileStones').click(function(){
+		$('.milestonesPageDisplay').show();
+		$('.mainPageDisplay').hide();
+		$('.leaguePageDisplay').hide();
+		$('.schedulePageDisplay').hide();
+	});	
+
+
+	</script>
+</html>
